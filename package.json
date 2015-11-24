@@ -1,0 +1,49 @@
+{
+  "name": "tonal.key-tools",
+  "version": "0.0.0",
+  "private": "true",
+  "description": "Music keys",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "cp README.md lib/ && npm run docs && npm run dist && npm run disc && npm run coverage",
+    "test": "vows --spec test/*.js",
+    "docs": "documentation -f md > API.md",
+    "dist": "browserify lib/index.js | uglifyjs > dist/tonal.key.min.js&& ls -hall dist/",
+    "disc": "browserify --full-paths lib/index.js | uglifyjs | discify > dist/disc.html",
+    "coverage": "istanbul cover vows test/*.js",
+    "cover": "npm run coverage && open ./coverage/lcov-report/index.html",
+    "climate": "npm run coverage && npm run codeclimate",
+    "codeclimate": "CODECLIMATE_REPO_TOKEN= codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigb/tonal.key.git"
+  },
+  "keywords": [
+    "music",
+    "theory",
+    "key",
+    "alterations",
+    "tonality",
+    "scales",
+    "chords",
+    "tonal"
+  ],
+  "author": "danigb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigb/tonal.key/issues"
+  },
+  "homepage": "https://github.com/danigb/tonal.key#readme",
+  "devDependencies": {
+    "vows": "^0.8.x"
+  },
+  "dependencies": {
+    "tonal.distance": "file:../distance",
+    "tonal.gamut": "file:../gamut/lib",
+    "tonal.notation": "file:../notation/lib",
+    "tonal.scale": "file:../scale/lib",
+    "tonal.set": "file:../set/lib",
+    "tonal.transpose": "file:../transpose"
+  }
+}
