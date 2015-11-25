@@ -1,8 +1,7 @@
 {
   "name": "tonal.key",
   "version": "0.0.1",
-  "private": "true",
-  "description": "Music keys",
+  "description": "Music keys made easy",
   "main": "index.js",
   "scripts": {
   },
@@ -27,11 +26,11 @@
   },
   "homepage": "https://github.com/danigb/tonal.key#readme",
   "dependencies": {
-    "tonal.distance": "file:../../distance",
-    "tonal.gamut": "file:../../gamut/lib",
-    "tonal.notation": "file:../../notation/lib",
-    "tonal.scale": "file:../../scale/lib",
-    "tonal.set": "file:../../set/lib",
-    "tonal.transpose": "file:../../transpose"
+    "tonal.distance": "0.0.x",
+    "tonal.gamut": "0.0.x",
+    "tonal.notation": "0.0.x",
+    "tonal.scale": "0.0.x",
+    "tonal.set": "0.0.x",
+    "tonal.transpose": "0.0.x"
   }
 }

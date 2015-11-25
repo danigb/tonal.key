@@ -36,10 +36,10 @@ A key in `tonal.key` is a string with a tonic and (optionally) a mode: `'C'`, `'
 The key function returns a key from a name or from a signature:
 
 ```js
-key('C major') // => ['C', 'major']
-key('C') // => ['C', 'major']
-key('Cb dorian') // => ['Cb', 'dorian']
+key('C major') // => 'C major'
+key('C') // => 'C major'
 key('#') // => 'G major'
+key('bb') // => 'Eb major'
 ```
 
 #### Relative keys
@@ -88,7 +88,7 @@ key.scale('C major') // => ['C', 'D', 'E', 'F', 'G', 'A', 'B']
 key.chords('C major') // => ['CM', 'Dm', 'Em', 'FM', 'G7', 'Am', 'Bdim']
 ```
 
-The key chords are strictly the ones derived from the scale. For example, V chord in minor key is a minor chord (take a look to [music.harmony]() for more advanced uses)
+The key chords are strictly the ones derived from the scale. For example, V chord in minor key is a minor chord (take a look to [tonal.harmony]() for more advanced uses)
 
 #### Progressions
 
@@ -105,10 +105,10 @@ You can use bars to separate romans:
 key.progression('II V | I', 'Ab major') // => ['Bbm', 'Eb7', 'AbM']
 ```
 
-## Documentation
+#### More ...
 
-Read the [user guide](https://github.com/danigb/tonal.key/blob/master/GUIDE.md)
-or the generated [API documentation](https://github.com/danigb/tonal.key/blob/master/API.md)
+Read the generated [API documentation](https://github.com/danigb/tonal.key/blob/master/API.md)
+or get [tonal](https://www.npmjs.com/package/tonal)
 
 ## License
 

@@ -23,7 +23,7 @@ This is part of [tonal](https://www.npmjs.com/package/tonal)
 
 ## Installation
 
-Not yet released.
+Via npm: `npm i --save tonal.key`
 
 ## User guide
 
@@ -105,10 +105,10 @@ You can use bars to separate romans:
 key.progression('II V | I', 'Ab major') // => ['Bbm', 'Eb7', 'AbM']
 ```
 
-## Documentation
+#### More ...
 
-Read the [user guide](https://github.com/danigb/tonal.key/blob/master/GUIDE.md)
-or the generated [API documentation](https://github.com/danigb/tonal.key/blob/master/API.md)
+Read the generated [API documentation](https://github.com/danigb/tonal.key/blob/master/API.md)
+or get [tonal](https://www.npmjs.com/package/tonal)
 
 ## License
 
